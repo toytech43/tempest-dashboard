@@ -54,11 +54,19 @@ data:{
 labels:[time],
 datasets:[{
 data:[temp],
-tension:.4
+borderColor:"#ff7b00",
+backgroundColor:"rgba(255,123,0,0.2)",
+fill:true,
+tension:.4,
+pointRadius:0
 }]
 },
 options:{
-plugins:{legend:{display:false}}
+plugins:{legend:{display:false}},
+scales:{
+x:{display:false},
+y:{grid:{color:"#eee"}}
+}
 }
 })
 
@@ -82,21 +90,25 @@ chart.update()
 
 function buildForecast(){
 
-const days=["Thu","Fri","Sat","Sun","Mon","Tue","Wed"]
+const days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
 
 let html=""
 
-for(let d of days){
+for(let i=1;i<=7;i++){
+
+const d=new Date()
+d.setDate(d.getDate()+i)
 
 html+=`
-
 <div class="day">
-<div>${d}</div>
+<div>${days[d.getDay()]}</div>
 <div class="day-icon">☀️</div>
-<div>65° / 50°</div>
+<div>72° / 55°</div>
 </div>
-
 `
+}
+
+document.getElementById("forecast").innerHTML=html
 
 }
 
