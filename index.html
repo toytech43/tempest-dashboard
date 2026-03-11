@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,7 +9,6 @@
 <title>Tempest Dashboard</title>
 
 <link rel="stylesheet" href="style.css">
-
 
 </head>
 
@@ -27,33 +27,23 @@
 
 <div class="left">
 
-<div class="weather-icon">☁️</div>
+<div class="weather-icon">☀️</div>
 
 <div class="temperature">
 
-<span id="temp">56</span>°F
+<span id="temp">--</span>°F
 
 </div>
 
 <div class="feels">
 
-Feels Like <span id="feels">55</span>°
+Feels Like <span id="feels">--</span>°
 
 </div>
 
 </div>
 
 <div class="right">
-
-<div class="metric">
-<label>Sunrise</label>
-<span id="sunrise"></span>
-</div>
-
-<div class="metric">
-<label>Sunset</label>
-<span id="sunset"></span>
-</div>
 
 <div class="metric">
 <label>Wind</label>
@@ -76,18 +66,19 @@ Feels Like <span id="feels">55</span>°
 </div>
 
 <div class="metric">
-<label>Visibility</label>
-<span id="visibility"></span>
+<label>Solar</label>
+<span id="solar"></span>
 </div>
 
 <div class="metric">
-<label>Air Quality</label>
-<span id="air"></span>
+<label>Rain</label>
+<span id="rain"></span>
 </div>
 
 </div>
 
 </section>
+
 
 <section class="hourly">
 
@@ -97,6 +88,7 @@ Feels Like <span id="feels">55</span>°
 
 </section>
 
+
 <section class="forecast" id="forecast"></section>
 
 </div>
@@ -104,4 +96,5 @@ Feels Like <span id="feels">55</span>°
 <script src="app.js"></script>
 
 </body>
+
 </html>
