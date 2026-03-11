@@ -1,5 +1,5 @@
-const stationID = "YOUR_STATION_ID"
-const token = "YOUR_TOKEN"
+const stationID = "172718"
+const token = "44d18b63-f6c1-4b2e-b1bd-f50254360fd1"
 
 let chart
 
