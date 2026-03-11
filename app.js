@@ -1,5 +1,5 @@
-const stationID = "172718"
-const token = "44d18b63-f6c1-4b2e-b1bd-f50254360fd1"
+const stationID = "YOUR_STATION_ID"
+const token = "YOUR_TOKEN"
 
 let chart
 
@@ -54,19 +54,11 @@ data:{
 labels:[time],
 datasets:[{
 data:[temp],
-borderColor:"#ff7b00",
-backgroundColor:"rgba(255,123,0,0.2)",
-fill:true,
-tension:.4,
-pointRadius:0
+tension:.4
 }]
 },
 options:{
-plugins:{legend:{display:false}},
-scales:{
-x:{display:false},
-y:{grid:{color:"#eee"}}
-}
+plugins:{legend:{display:false}}
 }
 })
 
@@ -90,25 +82,21 @@ chart.update()
 
 function buildForecast(){
 
-const days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+const days=["Thu","Fri","Sat","Sun","Mon","Tue","Wed"]
 
 let html=""
 
-for(let i=1;i<=7;i++){
-
-const d=new Date()
-d.setDate(d.getDate()+i)
+for(let d of days){
 
 html+=`
-<div class="day">
-<div>${days[d.getDay()]}</div>
-<div class="day-icon">☀️</div>
-<div>72° / 55°</div>
-</div>
-`
-}
 
-document.getElementById("forecast").innerHTML=html
+<div class="day">
+<div>${d}</div>
+<div class="day-icon">☀️</div>
+<div>65° / 50°</div>
+</div>
+
+`
 
 }
 
