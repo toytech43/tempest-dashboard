@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tempest Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="weather-card">
+
+<header>
+
+<h1 id="location">My Weather Station</h1>
+<p id="date"></p>
+
+</header>
+
+<section class="current-weather">
+
+<div class="left">
+
+<div class="weather-icon">☁️</div>
+
+<div class="temperature">
+
+<span id="temp">56</span>°F
+
+</div>
+
+<div class="feels">
+
+Feels Like <span id="feels">55</span>°
+
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="metric">
+<label>Sunrise</label>
+<span id="sunrise"></span>
+</div>
+
+<div class="metric">
+<label>Sunset</label>
+<span id="sunset"></span>
+</div>
+
+<div class="metric">
+<label>Wind</label>
+<span id="wind"></span>
+</div>
+
+<div class="metric">
+<label>Humidity</label>
+<span id="humidity"></span>
+</div>
+
+<div class="metric">
+<label>Pressure</label>
+<span id="pressure"></span>
+</div>
+
+<div class="metric">
+<label>UV Index</label>
+<span id="uv"></span>
+</div>
+
+<div class="metric">
+<label>Visibility</label>
+<span id="visibility"></span>
+</div>
+
+<div class="metric">
+<label>Air Quality</label>
+<span id="air"></span>
+</div>
+
+</div>
+
+</section>
+
+<section class="chart-section">
+
+<canvas id="tempChart"></canvas>
+
+</section>
+
+<section class="forecast" id="forecast"></section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
