@@ -10,6 +10,9 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+
 </head>
 
 <body>
@@ -18,7 +21,7 @@
 
 <header>
 
-<h1 id="location">My Weather Station</h1>
+<h1 id="location">Paramus, NJ</h1>
 <p id="date"></p>
 
 </header>
@@ -27,7 +30,11 @@
 
 <div class="left">
 
-<div class="weather-icon">☀️</div>
+<div class="weather-icon">
+<i id="weatherIcon" class="wi wi-day-sunny"></i>
+</div>
+
+<div id="conditions" class="conditions"></div>
 
 <div class="temperature">
 
@@ -46,33 +53,43 @@ Feels Like <span id="feels">--</span>°
 <div class="right">
 
 <div class="metric">
-<label>Wind</label>
+<label><i class="wi wi-strong-wind"></i> Wind</label>
 <span id="wind"></span>
 </div>
 
 <div class="metric">
-<label>Humidity</label>
+<label><i class="wi wi-humidity"></i> Humidity</label>
 <span id="humidity"></span>
 </div>
 
 <div class="metric">
-<label>Pressure</label>
+<label><i class="wi wi-barometer"></i> Pressure</label>
 <span id="pressure"></span>
 </div>
 
 <div class="metric">
-<label>UV Index</label>
+<label><i class="wi wi-day-sunny"></i> UV</label>
 <span id="uv"></span>
 </div>
 
 <div class="metric">
-<label>Solar</label>
+<label><i class="wi wi-hot"></i> Solar</label>
 <span id="solar"></span>
 </div>
 
 <div class="metric">
-<label>Rain</label>
+<label><i class="wi wi-raindrop"></i> Rain</label>
 <span id="rain"></span>
+</div>
+
+<div class="metric">
+<label><i class="wi wi-sunrise"></i> Sunrise</label>
+<span id="sunrise"></span>
+</div>
+
+<div class="metric">
+<label><i class="wi wi-sunset"></i> Sunset</label>
+<span id="sunset"></span>
 </div>
 
 </div>
