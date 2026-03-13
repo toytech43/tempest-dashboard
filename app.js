@@ -235,3 +235,8 @@ setInterval(loadHourly,3600000)
 setInterval(buildForecast,3600000)
 
 setInterval(updateTime,1000)
+
+if ("serviceWorker" in navigator) {
+navigator.serviceWorker.register("sw.js")
+.then(() => console.log("Service Worker Registered"))
+}
