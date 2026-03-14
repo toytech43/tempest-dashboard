@@ -217,12 +217,32 @@ now.toLocaleString()
 
 
 
+/* WAKE LOCK */
+
+async function enableWakeLock(){
+  try {
+    if('wakeLock' in navigator){
+      let wakeLock = await navigator.wakeLock.request('screen')
+      document.addEventListener('visibilitychange', async () => {
+        if(document.visibilityState === 'visible'){
+          wakeLock = await navigator.wakeLock.request('screen')
+        }
+      })
+    }
+  } catch(e){
+    console.log('Wake lock not available:', e)
+  }
+}
+
+
+
 /* INITIAL LOAD */
 
 loadWeather()
 loadHourly()
 buildForecast()
 updateTime()
+enableWakeLock()
 
 
 
