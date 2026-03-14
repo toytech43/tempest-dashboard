@@ -48,15 +48,15 @@ color:#666;
 
 .current-weather{
 display:grid;
-grid-template-columns:300px 1fr;
-gap:20px;
+grid-template-columns:160px 1fr;
+gap:12px;
 align-items:center;
 
 background-image:url("wallpaper.jpg");
 background-size:cover;
 background-position:center;
 
-padding:25px;
+padding:12px;
 border-radius:12px;
 color:white;
 }
@@ -66,11 +66,11 @@ text-align:center;
 }
 
 .weather-icon{
-font-size:80px;
+font-size:40px;
 }
 
 .temperature{
-font-size:90px;
+font-size:48px;
 font-weight:bold;
 color:#040404;
 }
@@ -86,12 +86,13 @@ color:#333;
 
 .feels{
 color:#060606;
+font-size:13px;
 }
 
 .right{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:20px;
+gap:10px;
 }
 
 .metric{
@@ -100,12 +101,12 @@ text-align:center;
 
 .metric label{
 display:block;
-font-size:14px;
+font-size:11px;
 color:#888;
 }
 
 .metric span{
-font-size:20px;
+font-size:14px;
 font-weight:bold;
 }
 
@@ -246,11 +247,11 @@ color:#777;
   }
 
   .weather-icon {
-    font-size: 54px;
+    font-size: 30px;
   }
 
   .temperature {
-    font-size: 64px;
+    font-size: 36px;
   }
 
   /* Metrics: 2 columns instead of 3 */
