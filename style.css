@@ -227,3 +227,58 @@ color:#4a90e2;
 margin-right:6px;
 color:#777;
 }
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  #location {
+    font-size: 24px;
+  }
+
+  /* Stack left/right panels vertically */
+  .current-weather {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .weather-icon {
+    font-size: 54px;
+  }
+
+  .temperature {
+    font-size: 64px;
+  }
+
+  /* Metrics: 2 columns instead of 3 */
+  .right {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  /* Forecast days: wrap and shrink */
+  .forecast {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .day {
+    width: calc(33% - 10px);
+    min-width: 80px;
+    padding: 10px;
+  }
+
+  /* Hourly: smaller tiles */
+  .hour {
+    width: 40px;
+    font-size: 11px;
+  }
+
+  .hour-temp {
+    font-size: 12px;
+  }
+}
