@@ -232,7 +232,8 @@ margin-bottom:6px;
 text-align:center;
 }
 
-.sun-item label{
+.sun-item label,
+.sun-label{
 display:block;
 font-size:16px;
 color:#888;
