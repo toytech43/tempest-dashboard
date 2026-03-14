@@ -68,6 +68,7 @@ text-align:center;
 
 .weather-icon{
 font-size:48px;
+color: #dcdbdb;
 }
 
 .temperature{
@@ -79,6 +80,7 @@ color:#040404;
 #sunrise,
 #sunset{
 color:#444;
+font-weight:bold;
 }
 
 .metric span{
