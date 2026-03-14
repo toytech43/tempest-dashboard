@@ -38,12 +38,13 @@ margin-bottom:25px;
 }
 
 #location{
-font-size:36px;
+font-size:20px;
 margin:0;
 }
 
 #date{
 color:#666;
+font-size:12px;
 }
 
 .current-weather{
@@ -237,7 +238,7 @@ color:#777;
   }
 
   #location {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   /* Stack left/right panels vertically */
