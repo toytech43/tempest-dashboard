@@ -1,5 +1,5 @@
 body{
-background:rgb(216, 206, 206);
+background:white;
 font-family:Segoe UI, Arial;
 margin:0;
 padding:30px;
@@ -24,7 +24,7 @@ top:0;
 left:0;
 right:0;
 bottom:0;
-background:rgba(255,255,255,0.45);
+background:rgba(255,255,255,0.65);
 border-radius:12px;
 }
 
@@ -34,7 +34,7 @@ position:relative;
 
 header{
 text-align:center;
-margin-bottom:4px;
+margin-bottom:25px;
 }
 
 #location{
@@ -142,17 +142,17 @@ font-size:7px;
 }
 
 .hour-time{
-font-size:12px;
+font-size:7px;
 color:#777;
 }
 
 .hour-icon{
-font-size:10px;
+font-size:7px;
 margin:2px 0;
 }
 
 .hour-temp{
-font-size:12px;
+font-size:8px;
 font-weight:bold;
 }
 
@@ -168,7 +168,9 @@ max-width:52px;
 .forecast{
 display:flex;
 justify-content:space-between;
+gap:8px;
 margin-top:25px;
+flex-wrap:wrap;
 }
 
 .day{
