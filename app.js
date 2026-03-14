@@ -20,7 +20,7 @@ const tempF = Math.round((tempC * 9/5) + 32)
 
 document.getElementById("temp").innerText = tempF
 
-const feels = Math.round((obs.air_temperature * 9/5) + 32)
+const feels = Math.round((obs.feels_like * 9/5) + 32)
 document.getElementById("feels").innerText = feels
 
 document.getElementById("humidity").innerText =
