@@ -55,7 +55,7 @@ const res = await fetch(
 
 const data = await res.json()
 
-const hours = data.forecast.hourly.slice(0,12)
+const hours = data.forecast.hourly.slice(0,10)
 
 let html = ""
 
