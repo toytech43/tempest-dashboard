@@ -79,27 +79,27 @@ const cond = (h.icon || "").toLowerCase()
 
 let isNight = h.time < sunrise || h.time > sunset
 
-let icon = isNight ? "wi-night-clear" : "wi-day-sunny"
+let icon = isNight ? "night-clear" : "sunny"
 
 if(cond.includes("cloud"))
-icon = isNight ? "wi-night-alt-cloudy" : "wi-day-cloudy"
+icon = isNight ? "night-cloudy" : "cloudy"
 
 if(cond.includes("partly"))
-icon = isNight ? "wi-night-alt-partly-cloudy" : "wi-day-cloudy"
+icon = isNight ? "night-partly-cloudy" : "partly-cloudy"
 
 if(cond.includes("rain"))
-icon = "wi-rain"
+icon = "rain"
 
 if(cond.includes("snow"))
-icon = "wi-snow"
+icon = "snow"
 
 
 /* UPDATE MAIN ICON + CONDITIONS USING FIRST HOUR */
 
 if(index === 0){
 
-document.getElementById("weatherIcon").className =
-`wi ${icon}`
+document.getElementById("weatherIcon").src =
+`weather-icons/${icon}.svg`
 
 document.getElementById("conditions").innerText =
 h.conditions
@@ -113,7 +113,7 @@ html += `
 <div class="hour-time">${hour12}${suffix}</div>
 
 <div class="hour-icon">
-<i class="wi ${icon}"></i>
+<img src="weather-icons/${icon}.svg">
 </div>
 
 <div class="hour-temp">${tempF}°</div>
@@ -168,19 +168,19 @@ const lowF = Math.round((d.air_temp_low * 9/5) + 32)
 
 const cond = (d.conditions || "").toLowerCase()
 
-let icon = "wi-day-sunny"
+let icon = "sunny"
 
 if(cond.includes("cloud"))
-icon = "wi-cloudy"
+icon = "cloudy"
 
 if(cond.includes("partly"))
-icon = "wi-day-cloudy"
+icon = "partly-cloudy"
 
 if(cond.includes("rain"))
-icon = "wi-rain"
+icon = "rain"
 
 if(cond.includes("snow"))
-icon = "wi-snow"
+icon = "snow"
 
 html += `
 <div class="day">
@@ -188,7 +188,7 @@ html += `
 <div>${day}</div>
 
 <div class="day-icon">
-<i class="wi ${icon}"></i>
+<img src="weather-icons/${icon}.svg">
 </div>
 
 <div>${highF}° / ${lowF}°</div>
