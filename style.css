@@ -44,7 +44,7 @@ margin:0;
 
 #date{
 color:#666;
-font-size:12px;
+font-size:14px;
 }
 
 .current-weather{
@@ -65,6 +65,12 @@ color:white;
 .left{
 text-align:center;
 }
+
+.temp-block{
+text-align:center;
+margin-top:-40px;
+}
+
 
 .weather-icon{
 font-size:48px;
