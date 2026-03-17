@@ -34,7 +34,7 @@ position:relative;
 
 header{
 text-align:center;
-margin-bottom:40px;
+margin-bottom:10px;
 }
 
 #location{
@@ -49,7 +49,7 @@ font-size:14px;
 
 .current-weather{
 display:grid;
-grid-template-columns:192px 1fr;
+grid-template-columns:clamp(120px, 25vw, 192px) 1fr;
 gap:12px;
 align-items:center;
 
@@ -64,13 +64,15 @@ color:white;
 
 .left{
 text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
 }
 
 .temp-block{
 text-align:center;
-position:relative;
-top:-90px;
-left:20px;
+position:static;
 }
 
 
@@ -78,8 +80,13 @@ left:20px;
 font-size:60px;
 }
 
+.weather-icon img{
+width:clamp(40px, 8vw, 100px);
+height:clamp(40px, 8vw, 100px);
+}
+
 .temperature{
-font-size:58px;
+font-size:clamp(28px, 6vw, 58px);
 font-weight:bold;
 color:#040404;
 }
@@ -95,7 +102,7 @@ color:#333;
 
 .feels{
 color:#060606;
-font-size:16px;
+font-size:clamp(11px, 2vw, 16px);
 }
 
 .right{
@@ -124,7 +131,7 @@ font-weight:bold;
 /* HOURLY FORECAST */
 
 .hourly{
-margin-top:25px;
+margin-top:10px;
 }
 
 .hourly h2{
@@ -246,7 +253,7 @@ margin-top:5px;
 display:flex;
 justify-content:center;
 gap:24px;
-margin-bottom:6px;
+margin-bottom:2px;
 }
 
 .sun-item{
