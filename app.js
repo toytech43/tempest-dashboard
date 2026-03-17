@@ -99,7 +99,7 @@ icon = "snow"
 if(index === 0){
 
 document.getElementById("weatherIcon").src =
-`weather-icons/${icon}.svg`
+`weather-icons/${icon}.png`
 
 document.getElementById("conditions").innerText =
 h.conditions
@@ -113,7 +113,7 @@ html += `
 <div class="hour-time">${hour12}${suffix}</div>
 
 <div class="hour-icon">
-<img src="weather-icons/${icon}.svg">
+<img src="weather-icons/${icon}.png">
 </div>
 
 <div class="hour-temp">${tempF}°</div>
@@ -188,7 +188,7 @@ html += `
 <div>${day}</div>
 
 <div class="day-icon">
-<img src="weather-icons/${icon}.svg">
+<img src="weather-icons/${icon}.png">
 </div>
 
 <div>${highF}° / ${lowF}°</div>
