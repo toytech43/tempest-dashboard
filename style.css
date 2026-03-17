@@ -72,7 +72,16 @@ justify-content:center;
 
 .temp-block{
 text-align:center;
-position:static;
+position:relative;
+top:-60px;
+left:0px;
+}
+
+.icon-block{
+text-align:center;
+position:relative;
+top:-60px;
+left:0px;
 }
 
 
