@@ -68,20 +68,23 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
+width:100%;
 }
 
 .temp-block{
 text-align:center;
 position:relative;
 top:-75px;
-left:50px;
+left:35px;
+width:100%;
 }
 
 .icon-block{
 text-align:center;
 position:relative;
 top:-75px;
-left:50px;
+left:35px;
+width:100%;
 }
 
 
@@ -90,12 +93,12 @@ font-size:60px;
 }
 
 .weather-icon img{
-width:clamp(40px, 8vw, 100px);
-height:clamp(40px, 8vw, 100px);
+width:clamp(30px, 6vw, 100px);
+height:clamp(30px, 6vw, 100px);
 }
 
 .temperature{
-font-size:clamp(28px, 6vw, 58px);
+font-size:clamp(20px, 5vw, 58px);
 font-weight:bold;
 color:#040404;
 }
