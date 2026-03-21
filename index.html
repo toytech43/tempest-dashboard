@@ -13,6 +13,9 @@
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <link rel="manifest" href="manifest.json">
 
 <meta name="theme-color" content="#2c3e50">
@@ -29,11 +32,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-ic
 <p id="date"></p>
 <div class="sun-times">
 <div class="sun-item">
-<div class="sun-label"><i class="wi wi-sunrise"></i> Sunrise</div>
+<div class="sun-label"><i class="fa-solid fa-arrow-up"></i> Sunrise</div>
 <span id="sunrise"></span>
 </div>
 <div class="sun-item">
-<div class="sun-label"><i class="wi wi-sunset"></i> Sunset</div>
+<div class="sun-label"><i class="fa-solid fa-arrow-down"></i> Sunset</div>
 <span id="sunset"></span>
 </div>
 </div>
@@ -44,22 +47,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-ic
 
 <div class="left">
 
-<div class="temp-block">
-
+<div class="icon-block">
 <div class="weather-icon">
 <img id="weatherIcon" src="weather-icons/sunny.png">
 </div>
-
 <div id="conditions" class="conditions"></div>
+</div>
 
+<div class="temp-block">
 <div class="temperature">
 <span id="temp">--</span>°F
 </div>
-
 <div class="feels">
 Feels Like <span id="feels">--</span>°
 </div>
-
 </div>
 
 </div>
@@ -67,32 +68,32 @@ Feels Like <span id="feels">--</span>°
 <div class="right">
 
 <div class="metric">
-<label><i class="wi wi-strong-wind"></i> Wind</label>
+<label><img src="metric-icons/wind.png" class="metric-icon"> Wind</label>
 <span id="wind"></span>
 </div>
 
 <div class="metric">
-<label><i class="wi wi-humidity"></i> Humidity</label>
+<label><img src="metric-icons/humidity.png" class="metric-icon"> Humidity</label>
 <span id="humidity"></span>
 </div>
 
 <div class="metric">
-<label><i class="wi wi-barometer"></i> Pressure</label>
+<label><img src="metric-icons/pressure.png" class="metric-icon"> Pressure</label>
 <span id="pressure"></span>
 </div>
 
 <div class="metric">
-<label><i class="wi wi-day-sunny"></i> UV</label>
+<label><img src="metric-icons/uv.png" class="metric-icon"> UV</label>
 <span id="uv"></span>
 </div>
 
 <div class="metric">
-<label><i class="wi wi-hot"></i> Solar</label>
+<label><img src="metric-icons/solar.png" class="metric-icon"> Solar</label>
 <span id="solar"></span>
 </div>
 
 <div class="metric">
-<label><i class="wi wi-raindrop"></i> Rain</label>
+<label><img src="metric-icons/rain.png" class="metric-icon"> Rain</label>
 <span id="rain"></span>
 </div>
 

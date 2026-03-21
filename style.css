@@ -74,16 +74,16 @@ width:100%;
 .temp-block{
 text-align:center;
 position:relative;
-top:-75px;
-left:35px;
+top:0px;
+left:0px;
 width:100%;
 }
 
 .icon-block{
 text-align:center;
 position:relative;
-top:-75px;
-left:35px;
+top:0px;
+left:0px;
 width:100%;
 }
 
@@ -295,9 +295,17 @@ font-size:11px;
 color:#4a90e2;
 }
 
-.metric label i{
+.metric label i,
+.sun-times i{
 margin-right:6px;
 color:#777;
+}
+
+.metric-icon{
+width:18px;
+height:18px;
+vertical-align:middle;
+margin-right:4px;
 }
 
 /* ── MOBILE RESPONSIVE ── */
