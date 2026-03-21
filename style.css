@@ -74,16 +74,16 @@ width:100%;
 .temp-block{
 text-align:center;
 position:relative;
-top:0px;
-left:0px;
+top:-75px;
+left:35px;
 width:100%;
 }
 
 .icon-block{
 text-align:center;
 position:relative;
-top:0px;
-left:0px;
+top:-75px;
+left:35px;
 width:100%;
 }
 
@@ -129,7 +129,7 @@ text-align:center;
 
 .metric label{
 display:block;
-font: size 18px;
+font-size:16px;
 color:#888;
 }
 
@@ -240,19 +240,21 @@ color:#4a90e2;
 color:#bcd7ff;
 }
 
-.weather-icon img{
-width:100px;
-height:100px;
-}
-
 .hour-icon img{
 width:28px;
 height:28px;
 }
 
 .day-icon img{
-width: 36px;
+width:36px;
 height:36px;
+}
+
+.metric-icon{
+width:18px;
+height:18px;
+vertical-align:middle;
+margin-right:4px;
 }
 
 .conditions{
@@ -295,17 +297,9 @@ font-size:11px;
 color:#4a90e2;
 }
 
-.metric label i,
-.sun-times i{
+.metric label i{
 margin-right:6px;
 color:#777;
-}
-
-.metric-icon{
-width:18px;
-height:18px;
-vertical-align:middle;
-margin-right:4px;
 }
 
 /* ── MOBILE RESPONSIVE ── */
