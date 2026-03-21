@@ -129,7 +129,7 @@ text-align:center;
 
 .metric label{
 display:block;
-font-size:16px;
+font-size:18px;
 color:#888;
 }
 
@@ -251,8 +251,8 @@ height:36px;
 }
 
 .metric-icon{
-width:18px;
-height:18px;
+width:24px;
+height:24px;
 vertical-align:middle;
 margin-right:4px;
 }
